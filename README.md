@@ -19,9 +19,9 @@
    * `Prefix + ]` 将选择的内容粘贴
 
 ## vim 在tmux下显示不全的问题
-    * 是由于tmux不支持256color导致的。
-    * 在~/.tmux.conf中添加 `set -g default-terminal "screen-256color"`
-    * 然后在启动tmux时候，使用`-2`参数，为此我在`.zshrc`中做了以下绑定
+* 是由于tmux不支持256color导致的。
+* 在~/.tmux.conf中添加: `set -g default-terminal "screen-256color"`
+* 然后在启动tmux时候，使用`-2`参数，为此我在`.zshrc`中做了以下绑定
     ```
     alias tmux='/usr/local/bin/tmux -2 '
     alias tmux-new='/usr/local/bin/tmux -2 new-session -s'
@@ -30,4 +30,3 @@
     alias tmux-kill='/usr/local/bin/tmux kill-session -t'
     alias tmux-ls='/usr/local/bin/tmux ls'
     ```
-
