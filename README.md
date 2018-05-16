@@ -16,7 +16,8 @@
     * `Prefix + [`，进入选择模式
     * `Space`， 开始先择
     * `Enter`, 选择完毕
-   * `Prefix + ]` 将选择的内容粘贴
+    * `Prefix + ]` 将选择的内容粘贴
+    * 移动可以使用vi的方式
 
 ## vim 在tmux下显示不全的问题
 * 是由于tmux不支持256color导致的。
@@ -26,7 +27,7 @@
     alias tmux='/usr/local/bin/tmux -2 '
     alias tmux-new='/usr/local/bin/tmux -2 new-session -s'
     alias tmux-detach='/usr/local/bin/tmux detach'
-    alias tmux-attach='/usr/local/bin/tmux attach-session -t'
+    alias tmux-attach='/usr/local/bin/tmux -2 attach-session -t'
     alias tmux-kill='/usr/local/bin/tmux kill-session -t'
     alias tmux-ls='/usr/local/bin/tmux ls'
     ```
