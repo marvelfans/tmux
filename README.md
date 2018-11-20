@@ -33,3 +33,6 @@
     alias tmux-kill='/usr/local/bin/tmux kill-session -t'
     alias tmux-ls='/usr/local/bin/tmux ls'
     ```
+
+## 插件管理
+* [tpm插件管理](https://github.com/tmux-plugins/tpm)
