@@ -20,6 +20,10 @@
     * 移动可以使用vi的方式
 * 窗口移动
     * `Prefix + [hjkl]` 向左、下、上、右移动窗口。
+* 对`window`位置调整. 
+    * `Prefix + :` 进入命令模式.
+        * `swap-window -t <win-number>` 将当前`window`和`<win-number>`进行交换.
+        * `move-window -t <win-number>` 将当前`window`移动到`<win-number>`, `win-number`为0或不存在.(比如当前有[1,2,3,4], 将3退出后, 就可以将4移动到3, 但将4移动到1, 2就不可以.)
 
 ## vim 在tmux下显示不全的问题
 * 是由于tmux不支持256color导致的。
